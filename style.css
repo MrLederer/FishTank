@@ -14,15 +14,20 @@ body {
 }
 
 .food {
-	background-color: red;
-	height: 30px;
+	background-image: url(img/food.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 40px;
 	width: 30px;
 	position: absolute;
 	transform: translate(-50%,-50%);
+	transition: all .1s ease;
+	transform-origin: center center;
 }
 
 .food.being-eaten {
-	background-color: #f99;
+	transform: rotateZ(30deg) scale(1.1) translate(-50%,-50%);
 }
 
 #fish {
