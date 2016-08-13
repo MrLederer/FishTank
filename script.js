@@ -29,7 +29,6 @@ $(function() {
         fish.turnToPointer();
         fish.moveTo(...mouse);
 
-
     }
 
 
